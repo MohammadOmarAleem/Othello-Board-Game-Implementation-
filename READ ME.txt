@@ -1,0 +1,9 @@
+The code provided is for a Board class that represents a game board for a two-player game. The class contains various methods that perform actions such as drawing the board, checking if a move is valid, making a move, and checking if the game is over.
+
+The Board class initializes the game board with empty cells and sets the standard or custom starting position based on user input. It then draws the board on the console with row and column numbers for easy reference. To check if a move is valid, it verifies if the row and column are within the board boundaries, if the cell is unoccupied, and if the move flips any opponent pieces.
+
+The makeMove() method updates the board with the new move and flips opponent pieces in all 8 directions. The isGameOver() method checks if all positions on the board are filled with a symbol or if any player has no more moves available.
+
+The Board class also includes methods to switch pieces in a given direction, find playable positions, and set or get the value of a board cell. The provided code snippet also includes the Game class, which handles saving and loading games, as well as the actual gameplay.
+
+When a new game is started, the players' names are entered, and the play() method is called with the Board and Player objects as arguments. The method loops until the game is over, prompting the current player to choose an action such as making a move, saving the game, conceding, or forfeiting their turn. If the game is loaded from a file, the loadGame() method is called, which reads the file and initializes the Board and Player objects accordingly. Finally, the saveGame() method is used to save the game to a file.
